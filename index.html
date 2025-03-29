@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rayassineelouafa - كلمات متقاطعة</title>
+    <title>لعبة الأسئلة - rayassineelouafa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>لعبة الكلمات المتقاطعة</h1>
     <div id="game-container">
-        <table id="crossword"></table>
-        <button onclick="checkAnswers()">تحقق من الإجابات</button>
-    </div>
-    <div id="clues">
-        <h2>الأفقي:</h2>
-        <ul id="across-clues"></ul>
-        <h2>العمودي:</h2>
-        <ul id="down-clues"></ul>
+        <h1>لعبة الأسئلة</h1>
+        <div id="question-box">
+            <p id="question-text"></p>
+            <input type="text" id="answer-input" placeholder="اكتب الجواب هنا">
+            <button onclick="checkAnswer()">إرسال</button>
+        </div>
+        <p id="feedback"></p>
     </div>
     <script src="script.js"></script>
 </body>
