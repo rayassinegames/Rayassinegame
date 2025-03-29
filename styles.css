@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #0073e6; /* أزرق */
+    background-color: #0073e6; /* خلفية زرقاء */
     color: white;
 }
 
@@ -33,23 +33,18 @@ button {
     cursor: pointer;
 }
 
-#feedback {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* عند الفوز */
+/* لون أخضر عند الفوز */
 .correct {
-    color: white;
     background-color: green;
+    color: white;
     padding: 15px;
     border-radius: 5px;
 }
 
-/* عند الخسارة */
+/* لون أحمر عند الخسارة */
 .wrong {
-    color: white;
     background-color: red;
+    color: white;
     padding: 15px;
     border-radius: 5px;
 }
