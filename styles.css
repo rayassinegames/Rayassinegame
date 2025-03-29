@@ -1,42 +1,55 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #0073e6; /* أزرق */
+    color: white;
 }
 
 #game-container {
-    display: inline-block;
-    margin-top: 20px;
+    background: white;
+    color: black;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-table {
-    border-collapse: collapse;
-    margin: auto;
-}
-
-td {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border: 1px solid black;
-    position: relative;
+#question-box {
+    margin-bottom: 20px;
 }
 
 input {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
     text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#feedback {
     font-size: 20px;
-    text-transform: uppercase;
-    border: none;
+    font-weight: bold;
 }
 
-input:focus {
-    outline: 2px solid blue;
+/* عند الفوز */
+.correct {
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-#clues {
-    margin-top: 20px;
-    text-align: left;
-    display: inline-block;
+/* عند الخسارة */
+.wrong {
+    color: white;
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
 }
